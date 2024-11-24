@@ -3,12 +3,15 @@
 #container{
   display:flex;
   margin:10px;
-  flex-direction:row;
+  flex-direction:colum;
 }
 
 .section{
   border: '1px solid #000';
   border-radius: 12px;
   background:#CCC; 
+  width:1024px;
+  height:300px;
+  padding:10px;
 }
 
