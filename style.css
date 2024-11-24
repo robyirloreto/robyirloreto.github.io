@@ -6,4 +6,9 @@
   flex-direction:row;
 }
 
+.section{
+  border: '1px solid #000';
+  border-radius: 12px;
+  background:#CCC; 
+}
 
