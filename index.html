@@ -6,6 +6,19 @@
     <title>Robyir Loreto - Desarrollador de Sistemas</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
+        /* Estilos para el fondo de partículas */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000; /* Fondo negro */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1; /* Para que esté detrás del contenido */
+        }
         /* Estilos adicionales para la imagen circular */
         .profile-pic {
             width: 150px; /* Tamaño de la imagen */
@@ -16,42 +29,44 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 to-blue-50 text-gray-800 font-sans">
+<body class="text-gray-100 font-sans">
 
-    <div class="container mx-auto p-8 max-w-4xl">
+    <div id="particles-js"></div>
+
+    <div class="container mx-auto p-8 max-w-4xl" style="position: relative; z-index: 1;">
 
         <header class="text-center mb-10">
             <img src="./assets/YoIA.png" alt="Mi Foto de Perfil" class="profile-pic mx-auto mb-4 shadow-lg">
             
-            <h1 class="text-4xl font-bold text-gray-900 mb-2">Robyir Loreto</h1>
-            <p class="text-xl text-gray-600">Ingeniería / Informática</p>
+            <h1 class="text-4xl font-bold text-gray-100 mb-2">Robyir Loreto</h1>
+            <p class="text-xl text-gray-300">Ingeniería / Informática</p>
             <div class="mt-4 flex justify-center space-x-4">
-                <a href="https://github.com/robyirloreto" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" class="w-7 h-7 inline-block mr-1"> GitHub
+                <a href="https://github.com/robyirloreto" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" class="w-7 h-7 inline-block mr-1"> GitHub
                 </a>
-                <a href="https://www.linkedin.com/in/robyirloreto-ve" target="_blank" class="text-gray-600 hover:text-gray-900 transition duration-300">
-                    <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" class="w-7 h-7 inline-block mr-1"> LinkedIn
+                <a href="https://www.linkedin.com/in/robyirloreto-ve" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-7 h-7 inline-block mr-1"> LinkedIn
                 </a>
             </div>
         </header>
 
-        <section class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Síntesis Curricular</h2>
-            <p class="text-gray-700 leading-relaxed">
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Síntesis Curricular</h2>
+            <p class="text-gray-200 leading-relaxed">
                 Desarrollador de software con 5 años de experiencia en el diseño, desarrollo y despliegue de aplicaciones web y móviles. Especializado en tecnologías como JavaScript, React, Node.js y PHP. Me apasiona la resolución de problemas complejos y la creación de soluciones innovadoras que impacten positivamente. Busco oportunidades para aplicar mis habilidades en entornos dinámicos y contribuir al éxito de proyectos desafiantes.
             </p>
-            <p class="text-gray-700 leading-relaxed mt-2">
+            <p class="text-gray-200 leading-relaxed mt-2">
                 Conocimientos en bases de datos SQL y MySQL, control de versiones: Git y metodologías ágiles: Scrum.
             </p>
         </section>
 
-        <section class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Experiencia Laboral Destacada</h2>
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Experiencia Laboral Destacada</h2>
             
             <div class="mb-6">
-                <h3 class="text-xl font-bold text-gray-800">Speedy Delivery Services LLC - New York</h3>
-                <p class="text-gray-500">2021 - Actualidad</p>
-                <ul class="list-disc list-outside text-gray-700 mt-2 space-y-2 pl-4">
+                <h3 class="text-xl font-bold text-gray-200">Speedy Delivery Services LLC - New York</h3>
+                <p class="text-gray-400">2021 - Actualidad</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
                     <li>
                         <strong>Desarrollo de Software:</strong> Participé en el desarrollo de módulos para el sistema de <strong>Pickup & Delivery</strong>, usando <strong>ReactJS</strong> para el frontend y <strong>Node.js con Express</strong> en el backend.
                     </li>
@@ -59,7 +74,7 @@
                         <strong>Desarrollo de Aplicaciones Móviles:</strong> Contribuí al desarrollo de una aplicación móvil para los clientes (Customer App).
                     </li>
                     <li>
-                        <strong>Integración de Notificaciones:</strong> Implementación de **Notificaciones Push** mediante <strong>Firebase Cloud Messaging (FCM)</strong> en el sistema y la aplicación móvil.
+                        <strong>Integración de Notificaciones:</strong> Implementación de <strong>Notificaciones Push</strong> mediante <strong>Firebase Cloud Messaging (FCM)</strong> en el sistema y la aplicación móvil.
                     </li>
                     <li>
                         <strong>Manejo de API de Google Maps:</strong> Utilicé la API de Google Maps para la visualización de mapas y el cálculo de distancias entre puntos.
@@ -68,9 +83,9 @@
             </div>
 
             <div class="mb-6">
-                <h3 class="text-xl font-bold text-gray-800">Help Desk - Centro Clínico Flor Amarillo, C.A.</h3>
-                <p class="text-gray-500">2011 - 2021</p>
-                <ul class="list-disc list-outside text-gray-700 mt-2 space-y-2 pl-4">
+                <h3 class="text-xl font-bold text-gray-200">Help Desk - Centro Clínico Flor Amarillo, C.A.</h3>
+                <p class="text-gray-400">2011 - 2021</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
                     <li>
                         <strong>Administración de Servidores Linux:</strong> Gestión de servidores con diferentes distribuciones (Debian, Oracle Linux 5.7 x64bits) para servicios críticos como sistemas de archivos compartidos (<strong>Samba</strong>) y la plataforma ERP de la clínica.
                     </li>
@@ -87,9 +102,9 @@
             </div>
 
             <div class="mb-6">
-                <h3 class="text-xl font-bold text-gray-800">Ofimaster, C.A.</h3>
-                <p class="text-gray-500">Enero 2009 - Octubre 2010</p>
-                <ul class="list-disc list-outside text-gray-700 mt-2 space-y-2 pl-4">
+                <h3 class="text-xl font-bold text-gray-200">Ofimaster, C.A.</h3>
+                <p class="text-gray-400">Enero 2009 - Octubre 2010</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
                     <li>
                         <strong>Ensamblaje y Formateo de Computadoras:</strong> Trabajé por un año en el ensamblaje, instalación y configuración de equipos de computación.
                     </li>
@@ -101,8 +116,8 @@
 
         </section>
 
-        <section class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Habilidades Técnicas</h2>
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Habilidades Técnicas</h2>
             <div class="flex flex-wrap gap-3">
                 <span class="bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
                 <span class="bg-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-medium">CSS</span>
@@ -125,12 +140,121 @@
             </div>
         </section>
 
-        <footer class="text-center text-gray-500 text-sm mt-10">
+        <footer class="text-center text-gray-400 text-sm mt-10">
             <p>&copy; 2025 Robyir Loreto Todos los derechos reservados.</p>
             <p>Hecho con Tailwind CSS.</p>
         </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#FF7538"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 
 </body>
 </html>
