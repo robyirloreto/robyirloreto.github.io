@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robyir Loreto - Desarrollador Freelance</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Estilos para el fondo de partículas */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #011627; /* Fondo Night Owl */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1; /* Para que esté detrás del contenido */
+        }
+        /* Estilos adicionales para la imagen circular */
+        .profile-pic {
+            width: 150px; /* Tamaño de la imagen */
+            height: 150px; /* Asegura que sea un círculo perfecto */
+            object-fit: cover; /* Recorta la imagen para que encaje sin distorsionarse */
+            border-radius: 50%; /* Hace la imagen circular */
+            border: 4px solid #4A5568; /* Borde gris oscuro para resaltar */
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background: #2D3748;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+        .skill-level {
+            height: 100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-100 font-sans">
+
+    <div id="particles-js"></div>
+
+    <div class="container mx-auto p-8 max-w-4xl" style="position: relative; z-index: 1;">
+
+        <div class="flex justify-end space-x-2 mb-4">
+            <a href="index.html" class="w-8 h-8" title="Versión en español">
+                <img src="https://img.icons8.com/color/48/000000/spain-2--v2.png" alt="Bandera de España">
+            </a>
+            <a href="index_en.html" class="w-8 h-8" title="English version">
+                <img src="https://img.icons8.com/color/48/000000/usa--v1.png" alt="Bandera de Estados Unidos">
+            </a>
+        </div>
+        
+        <header class="text-center mb-10">
+            <img src="./assets/YoIA.png" alt="Mi Foto de Perfil" class="profile-pic mx-auto mb-4 shadow-lg">
+            
+            <h1 class="text-4xl font-bold text-gray-100 mb-2">Robyir Loreto</h1>
+            <p class="text-xl text-gray-300">Desarrollador Freelance - Especialista en JavaScript y Solución de Bugs</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://github.com/robyirloreto" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" class="w-7 h-7 inline-block mr-1"> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/robyirloreto-ve" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-7 h-7 inline-block mr-1"> LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <!-- Sección de Introducción -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Desarrollador Freelance Remoto</h2>
+            <p class="text-gray-200 leading-relaxed">
+                Me especializo en desarrollo con <strong>JavaScript</strong>, creación de <strong>APIs con Node.js y Express</strong> 
+                y solución de <strong>bugs en sistemas PHP</strong>. Trabajo de forma remota con horarios flexibles 
+                para entregar soluciones eficientes y confiables.
+            </p>
+            <p class="text-gray-200 leading-relaxed mt-4">
+                ¿Tienes un proyecto que necesita una API robusta o un sistema con errores que resolver? Estoy aquí para ayudarte.
+            </p>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6 text-center">Servicios que Ofrezco</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🔧</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">Desarrollo de APIs RESTful</h3>
+                    <p class="text-gray-200 mb-4">
+                        Creo APIs rápidas y eficientes con <strong>Node.js, Express y MySQL</strong> para conectar tu base de datos con tu aplicación web o móvil.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Ejemplo: API para un sistema de gestión de tareas, catálogo de productos, etc.
+                    </p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🐛</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">Mantenimiento Correctivo en PHP</h3>
+                    <p class="text-gray-200 mb-4">
+                        Diagnóstico y solución de errores en sistemas existentes de PHP. Especialmente bugs relacionados con <strong>MySQL, formularios y lógica de aplicación</strong>.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Ejemplo: "El formulario no envía correos", "Error al subir archivos", "Página blanca".
+                    </p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">⚛️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">Desarrollo con React</h3>
+                    <p class="text-gray-200 mb-4">
+                        Creación de componentes y aplicaciones web modernas utilizando <strong>React Hooks</strong> y integración con APIs.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Ejemplo: Interfaces de usuario responsivas, paneles de administración, aplicaciones web interactivas.
+                    </p>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🎨</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">Diseño y Maquetación</h3>
+                    <p class="text-gray-200 mb-4">
+                        Uso de <strong>GIMP e Inkscape</strong> para diseño básico y creación de interfaces atractivas y funcionales.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Ejemplo: Diseño de elementos UI, edición de imágenes para web, creación de prototipos visuales.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Tecnologías -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6 text-center">Tecnologías Principales</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- JavaScript -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">JavaScript/Node.js</span>
+                        <span class="text-gray-400 text-sm">Avanzado</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-blue-500" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <!-- React -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">React</span>
+                        <span class="text-gray-400 text-sm">Intermedio-Avanzado</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-purple-500" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <!-- PHP -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">PHP</span>
+                        <span class="text-gray-400 text-sm">Intermedio</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-green-500" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <!-- MySQL -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">MySQL</span>
+                        <span class="text-gray-400 text-sm">Intermedio</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-indigo-500" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <!-- Express -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">Express.js</span>
+                        <span class="text-gray-400 text-sm">Intermedio-Avanzado</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-yellow-500" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <!-- HTML/CSS -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">HTML/CSS</span>
+                        <span class="text-gray-400 text-sm">Avanzado</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-red-500" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold text-gray-200 mb-3">Conocimientos adicionales</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">GIMP</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Inkscape</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">APIs REST</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Google Maps API</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Experiencia (modificada) -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Experiencia Relevante</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-200">Speedy Delivery Services LLC - New York (Remoto)</h3>
+                <p class="text-gray-400">2021 - Actualidad</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
+                    <li>
+                        <strong>Desarrollo con React y Node.js:</strong> Participé en el desarrollo de módulos para el sistema de <strong>Pickup & Delivery</strong>, usando <strong>React Hooks</strong> para el frontend y <strong>Node.js con Express</strong> en el backend.
+                    </li>
+                    <li>
+                        <strong>Integración de APIs:</strong> Implementación de <strong>Notificaciones Push</strong> mediante <strong>Firebase Cloud Messaging (FCM)</strong>.
+                    </li>
+                    <li>
+                        <strong>Manejo de API de Google Maps:</strong> Utilicé la API de Google Maps para la visualización de mapas y el cálculo de distancias.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-200">Help Desk - Centro Clínico Flor Amarillo, C.A.</h3>
+                <p class="text-gray-400">2011 - 2021</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
+                    <li>
+                        <strong>Gestión de Bases de Datos:</strong> Instalación y configuración básica de <strong>Oracle 11g R2</strong> y programación de respaldos.
+                    </li>
+                    <li>
+                        <strong>Administración de Servidores Linux:</strong> Gestión de servidores con diferentes distribuciones (Debian, Oracle Linux).
+                    </li>
+                    <li>
+                        <strong>Infraestructura de Redes:</strong> Cableado de redes y configuración de routers básicos.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección de Modalidad de Trabajo -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Modalidad de Trabajo</h2>
+            <div class="flex items-start mb-4">
+                <span class="text-2xl mr-3">🌎</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-200">Trabajo 100% Remoto</h3>
+                    <p class="text-gray-300">Disponible para clientes de cualquier parte del mundo.</p>
+                </div>
+            </div>
+            <div class="flex items-start mb-4">
+                <span class="text-2xl mr-3">⏰</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-200">Horarios Flexibles</h3>
+                    <p class="text-gray-300">Me adapto a tu huso horario y necesidades de comunicación.</p>
+                </div>
+            </div>
+            <div class="flex items-start">
+                <span class="text-2xl mr-3">💬</span>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-200">Comunicación Clara</h3>
+                    <p class="text-gray-300">Mantengo una comunicación constante durante los proyectos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8 text-center">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">¿Tienes un proyecto o necesitas resolver un error?</h2>
+            <p class="text-gray-200 mb-6">Estoy disponible para nuevos proyectos freelance. Contáctame y hablemos.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="mailto:tu.email@gmail.com" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                    Enviar Email
+                </a>
+                <a href="https://wa.me/584244216617" class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-lg transition duration-300">
+                    Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <footer class="text-center text-gray-400 text-sm mt-10">
+            <p>&copy; 2025 Robyir Loreto Todos los derechos reservados.</p>
+            <p>Hecho con Tailwind CSS.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+
+</body>
+</html>
