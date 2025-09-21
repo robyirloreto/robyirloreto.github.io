@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robyir Loreto - Freelance Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Particles background */
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #011627; /* Night Owl background */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1; /* Behind content */
+        }
+        /* Circular profile picture */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #4A5568;
+        }
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            background: #2D3748;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+        .skill-level {
+            height: 100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="text-gray-100 font-sans">
+
+    <div id="particles-js"></div>
+
+    <div class="container mx-auto p-8 max-w-4xl" style="position: relative; z-index: 1;">
+
+        <div class="flex justify-end space-x-2 mb-4">
+            <a href="index.html" class="w-8 h-8" title="Spanish version">
+                <img src="https://img.icons8.com/color/48/000000/spain-2--v2.png" alt="Spain Flag">
+            </a>
+            <a href="index_en.html" class="w-8 h-8" title="English version">
+                <img src="https://img.icons8.com/color/48/000000/usa--v1.png" alt="USA Flag">
+            </a>
+        </div>
+        
+        <header class="text-center mb-10">
+            <img src="./assets/YoIA.png" alt="Profile Picture" class="profile-pic mx-auto mb-4 shadow-lg">
+            
+            <h1 class="text-4xl font-bold text-gray-100 mb-2">Robyir Loreto</h1>
+            <p class="text-xl text-gray-300">Freelance Developer - JavaScript Specialist & Bug Fixer</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="https://github.com/robyirloreto" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/github.png" alt="GitHub" class="w-7 h-7 inline-block mr-1"> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/robyirloreto-ve" target="_blank" class="text-gray-300 hover:text-gray-100 transition duration-300">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" class="w-7 h-7 inline-block mr-1"> LinkedIn
+                </a>
+            </div>
+        </header>
+
+        <!-- Introduction Section -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Remote Freelance Developer</h2>
+            <p class="text-gray-200 leading-relaxed">
+                I specialize in <strong>JavaScript development</strong>, creating <strong>APIs with Node.js and Express</strong> 
+                and fixing <strong>bugs in PHP systems</strong>. I work remotely with flexible hours 
+                to deliver efficient and reliable solutions.
+            </p>
+            <p class="text-gray-200 leading-relaxed mt-4">
+                Do you have a project that needs a robust API or a system with bugs to fix? I'm here to help.
+            </p>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6 text-center">Services I Offer</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🔧</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">RESTful API Development</h3>
+                    <p class="text-gray-200 mb-4">
+                        I create fast and efficient APIs with <strong>Node.js, Express and MySQL</strong> to connect your database with your web or mobile application.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Example: API for a task management system, product catalog, etc.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🐛</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">PHP Bug Fixing</h3>
+                    <p class="text-gray-200 mb-4">
+                        Diagnosis and solution of errors in existing PHP systems. Especially bugs related to <strong>MySQL, forms and application logic</strong>.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Example: "Form doesn't send emails", "File upload error", "White page".
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">⚛️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">React Development</h3>
+                    <p class="text-gray-200 mb-4">
+                        Creation of components and modern web applications using <strong>React Hooks</strong> and API integration.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Example: Responsive user interfaces, admin panels, interactive web applications.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-800 bg-opacity-75 p-6 rounded-lg shadow-md">
+                    <div class="text-center mb-4">
+                        <span class="text-3xl">🎨</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-200 mb-3 text-center">Design & Layout</h3>
+                    <p class="text-gray-200 mb-4">
+                        Use of <strong>GIMP and Inkscape</strong> for basic design and creation of attractive and functional interfaces.
+                    </p>
+                    <p class="text-gray-400 text-sm italic">
+                        Example: UI element design, image editing for web, visual prototype creation.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies Section -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-6 text-center">Main Technologies</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- JavaScript -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">JavaScript/Node.js</span>
+                        <span class="text-gray-400 text-sm">Advanced</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-blue-500" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <!-- React -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">React</span>
+                        <span class="text-gray-400 text-sm">Intermediate-Advanced</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-purple-500" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <!-- PHP -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">PHP</span>
+                        <span class="text-gray-400 text-sm">Intermediate</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-green-500" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <!-- MySQL -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">MySQL</span>
+                        <span class="text-gray-400 text-sm">Intermediate</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-indigo-500" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <!-- Express -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">Express.js</span>
+                        <span class="text-gray-400 text-sm">Intermediate-Advanced</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-yellow-500" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <!-- HTML/CSS -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-gray-200 font-medium">HTML/CSS</span>
+                        <span class="text-gray-400 text-sm">Advanced</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-level bg-red-500" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-lg font-semibold text-gray-200 mb-3">Additional Knowledge</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">GIMP</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Inkscape</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Git</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">REST APIs</span>
+                    <span class="bg-gray-300 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Google Maps API</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="bg-gray-800 bg-opacity-75 p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-semibold text-gray-100 mb-4">Relevant Experience</h2>
+            
+            <div class="mb-6">
+                <h3 class="text-xl font-bold text-gray-200">Speedy Delivery Services LLC - New York (Remote)</h3>
+                <p class="text-gray-400">2021 - Present</p>
+                <ul class="list-disc list-outside text-gray-200 mt-2 space-y-2 pl-4">
+                    <li>
+                        <strong>React and Node.js Development:</strong> Participated in the development of modules for the <strong>Pickup & Delivery</strong> system, using <strong>React Hooks</strong> for the frontend and <strong>Node.js with Express</strong> in the backend.
+                    </li>
+                    <li>
+                        <strong>API Integration:</strong> Implementation of <strong>Push Notifications</strong> using <strong>Firebase Cloud Messaging (FCM)</strong>.
+                    </li>
+                    <li>
+                        <strong>Google Maps API Handling:</strong> Used the Google Maps API for map visualization and distance calculation.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb
