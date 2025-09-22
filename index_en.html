@@ -437,10 +437,17 @@
         });
     </script>
     <script>
-        // Obtener el año actual
-        const anioActual = new Date().getFullYear();
-        const textoFinal=  `${&copy;} ${anioActual} Robyir Loreto. All rights reserved.`;
-        document.getElementById("devcopyright").innerHTML(textoFinal);
-    </script>
+    // Obtener el año actual
+    const anioActual = new Date().getFullYear();
+    const textoFinal = `&copy; ${anioActual} Robyir Loreto. All rights reserved.`;
+    
+    // Esperar a que el DOM esté cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        const elemento = document.getElementById("devcopyright");
+        if (elemento) {
+            elemento.innerHTML = textoFinal;
+        }
+    });
+</script>
 </body>
 </html>
