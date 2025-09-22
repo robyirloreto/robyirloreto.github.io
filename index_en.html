@@ -323,8 +323,7 @@
         </section>
 
         <footer class="text-center text-gray-400 text-sm mt-10">
-            <p>&copy; 2025 Robyir Loreto. All rights reserved.</p>
-            <p>Made with Tailwind CSS.</p>
+            <p id="devcopyright"></p> 
         </footer>
 
     </div>
@@ -437,6 +436,11 @@
             "retina_detect": true
         });
     </script>
-
+    <script>
+        // Obtener el año actual
+        const anioActual = new Date().getFullYear();
+         
+        document.getElementById("devcopyright").innerHTML(&copy; anioActual Robyir Loreto. All rights reserved.);
+    </script>
 </body>
 </html>
