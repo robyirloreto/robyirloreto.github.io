@@ -150,7 +150,7 @@
         </section>
 
         <footer class="text-center text-gray-400 text-sm mt-10">
-            <p>&copy; 2025 Robyir Loreto All rights reserved.</p>
+            <p id="devcopyright"></p>
             <p>Built with Tailwind CSS.</p>
         </footer>
 
@@ -264,6 +264,18 @@
             "retina_detect": true
         });
     </script>
-
+    <script>
+    // Obtener el año actual
+    const anioActual = new Date().getFullYear();
+    const textoFinal = `&copy; ${anioActual} Robyir Loreto. All rights reserved.`;
+    
+    // Esperar a que el DOM esté cargado
+    document.addEventListener('DOMContentLoaded', function() {
+        const elemento = document.getElementById("devcopyright");
+        if (elemento) {
+            elemento.innerHTML = textoFinal;
+        }
+    });
+</script>
 </body>
 </html>
