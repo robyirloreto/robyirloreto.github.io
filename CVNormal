@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robyir Loreto - Síntesis Curricular</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Estilos compactos */
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #000000;
+      }
+      .cv-container {
+        padding: 1rem; /* Reducir padding */
+      }
+      .section-card {
+        padding: 1.5rem; /* Reducir padding de secciones */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans text-sm">
+    <div class="container mx-auto max-w-4xl cv-container">
+      <header class="text-center mb-4">
+        <img
+          src="./assets/YoIA.png"
+          alt="Mi Foto de Perfil"
+          class="profile-pic mx-auto mb-2 shadow-lg"
+        />
+        <h1 class="text-3xl font-bold text-gray-900 mb-0">Robyir Loreto</h1>
+        <p class="text-lg text-gray-700">
+          Ingeniero Full-Stack (React/Node) y Administrador de Sistemas Senior (Infraestructura / DevOps)
+        </p>
+        <p class="text-gray-600 mt-1">
+          <strong>Teléfono:</strong> 0424-421.66.17 &bull; 
+          <strong>Email:</strong> robyirloreto@gmail.com
+        </p>
+      </header>
+
+      <section class="bg-white p-4 rounded-lg shadow-xl mb-4 section-card">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">
+          Síntesis Curricular
+        </h2>
+        <p class="text-gray-600 leading-snug">
+          Ingeniero con perfil *cross-functional*, especializado en la gestión de proyectos desde la <strong>infraestructura física (Redes LAN, CCTV)</strong> hasta la <strong>capa de aplicación (Full-Stack React/Node)</strong>. Sólida experiencia como <strong>Administrador de Sistemas Senior</strong> en servidores <strong>Linux</strong> (Samba, VPN) y bases de datos de misión crítica (<strong>Oracle 11g R2, SQL Server</strong>). Orientado al <strong>soporte integral (Hardware, Software y Redes)</strong> en entornos complejos y heterogéneos.
+        </p>
+      </section>
+
+      <section class="bg-white p-4 rounded-lg shadow-xl mb-4 section-card">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">
+          Experiencia Laboral Destacada
+        </h2>
+
+        <div class="mb-4">
+          <h3 class="text-base font-bold text-gray-900 leading-tight">
+            Speedy Delivery Services LLC - New York (Desarrollador Full Stack Remoto)
+            <span class="text-gray-500 font-normal ml-2">| 2021 - Actualidad</span>
+          </h3>
+          <ul class="list-disc list-outside text-gray-600 mt-1 space-y-0 pl-4 text-xs">
+            <li>
+              <strong>Desarrollo Full Stack y Móvil:</strong> Migración de sistema logístico usando <strong>ReactJS</strong> y <strong>Node.js/Express</strong> con SQL Server. Desarrollo de apps móviles con <strong>React Native</strong> e <strong>Firebase Cloud Messaging (FCM)</strong>.
+            </li>
+            <li>
+              <strong>DevOps:</strong> Configuración de servidor <strong>IONOS</strong> (dominio, <strong>firewall</strong>) para despliegue del sistema y gestión de backups de SQL Server para asegurar continuidad operativa.
+            </li>
+          </ul>
+        </div>
+
+        <div class="mb-4">
+          <h3 class="text-base font-bold text-gray-900 leading-tight">
+            Centro Clínico Flor Amarillo, C.A. (Admin. de Sistemas & Soporte TI)
+            <span class="text-gray-500 font-normal ml-2">| 2011 - 2021</span>
+          </h3>
+          <ul class="list-disc list-outside text-gray-600 mt-1 space-y-0 pl-4 text-xs">
+            <li>
+              <strong>Sistemas Críticos:</strong> Instalación y gestión de <strong>Oracle 11g R2</strong> en <strong>Oracle Linux</strong>, incluyendo respaldos críticos. Implementación de servidor <strong>PACS/DICOM</strong> para el servicio de Rayos X.
+            </li>
+            <li>
+              <strong>Redes e Infraestructura:</strong> <strong>Diseño y despliegue de la red LAN</strong> completa (cableado estructurado) y configuración de <strong>routers, firewall</strong> para redireccionamiento por puertos y acceso remoto seguro (<strong>VPN pptpd</strong>).
+            </li>
+            <li>
+              <strong>Administración de Servidores:</strong> Gestión integral de servidores Linux (Oracle Linux) para servicios clave como compartición de archivos (<strong>Samba</strong>) y acceso remoto seguro (<strong>SSH</strong>).
+            </li>
+            <li>
+              <strong>Soporte TI Avanzado:</strong> Resolución de fallas de hardware, software e impresión en equipos de usuario y equipos médicos.
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mb-0">
+            <h3 class="text-base font-bold text-gray-900 leading-tight">
+                Otros Roles (Consultoría TI & Soporte Técnico)
+                <span class="text-gray-500 font-normal ml-2">| 2009 - 2021</span>
+            </h3>
+            <ul class="list-disc list-outside text-gray-600 mt-1 space-y-0 pl-4 text-xs">
+                <li>
+                    <strong>Consultoría:</strong> Instalación y puesta en marcha de sistemas de <strong>videovigilancia CCTV cableados</strong> con acceso remoto seguro. Creación de sitios web dinámicos con PHP/MySQL y WordPress.
+                </li>
+                <li>
+                    <strong>Soporte Inicial:</strong> Ensamblaje de equipos, instalación de S.O. y gestión del departamento de garantías (diagnóstico y reparación).
+                </li>
+            </ul>
+        </div>
+
+      </section>
+
+      <section class="bg-white p-4 rounded-lg shadow-xl mb-4 section-card">
+        <h2 class="text-xl font-semibold text-gray-700 mb-2">
+          Habilidades Técnicas
+        </h2>
+        
+        <div class="mb-3">
+          <h3 class="text-base font-semibold text-gray-700 mb-1">
+            💻 Desarrollo Full-Stack & Mobile
+          </h3>
+          <p class="text-gray-600">
+            React Native (iOS/Android), ReactJS, Node.js / Express, JavaScript (ES6+), PHP, HTML5/CSS3/Tailwind, WordPress.
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <h3 class="text-base font-semibold text-gray-700 mb-1">
+            ⚙️ Bases de Datos y Servidores
+          </h3>
+          <p class="text-gray-600">
+            Oracle 11g R2 (Instalación y Configuración), SQL Server, MySQL / SQL, Linux (Admin, Oracle Linux, Debian), SSH / Samba, VPN (pptpd).
+          </p>
+        </div>
+
+        <div class="mb-3">
+          <h3 class="text-base font-semibold text-gray-700 mb-1">
+            🌐 Redes, Infraestructura y Seguridad Avanzada
+          </h3>
+          <p class="text-gray-600">
+            Redes LAN y Ponchado (Cableado Estructurado), CCTV / Videovigilancia, Configuración de Routers y Firewalls, Redireccionamiento de Puertos, Hostings y Dominios, Servicios PACS / DICOM.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-base font-semibold text-gray-700 mb-1">
+            ⭐ Herramientas y Metodología
+          </h3>
+          <p class="text-gray-600">
+            Git / Control de Versiones, Firebase Cloud Messaging (FCM), Soporte Remoto (TeamViewer, Rustdesk), Virtualización, Diseño (Inkscape / GIMP), Stripe.
+          </p>
+        </div>
+      </section>
+
+      <footer class="text-center text-gray-600 text-xs mt-4">
+        <p>&copy; 2024 Robyir Loreto. All rights reserved.</p>
+        </footer>
+    </div>
+  </body>
+</html>
